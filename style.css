@@ -1,0 +1,527 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:  'Lexend Mega', sans-serif;
+}
+
+/* Sizing the navbar */
+.navbar-menu {
+  top: -50px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 400;
+  padding: 20px;
+  width: 200px;
+  height: 100vh;
+  border-right: 1px solid black;
+  background-color: #f4f3f6;
+  
+}
+
+/* Styling the li */
+.li-default{
+  list-style-type: none;
+  background-color: grey;
+  width: 60px; 
+  height: 60px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-menu, li{
+  margin-top: 50px;
+}
+
+.navbar-menu span {
+  opacity: 0;
+}
+
+/* Home Navbar */
+
+.home::before{
+  position: absolute;
+  content: '♠';
+  font-size: 40px;
+  left: -50%;
+  transform: translate(171px);
+}
+
+.home:hover{
+  transition: linear 0.3s;
+  width: 130px;
+  margin-left: 5px;
+  background-color: #1340e8;
+}
+
+.home:hover span{
+  opacity: 1;
+  text-decoration: none;
+  font-size: 20px;
+  color: #adadad;;
+}
+
+.home:hover::before {
+  transition: 0.5s;
+  opacity: 0;
+}
+
+/* About Navbar */
+
+.about::before{
+  position: absolute;
+  content: '♣';
+  font-size: 40px;
+  left: -50%;
+  transform: translate(169px);
+}
+
+.about:hover{
+  transition: linear 0.3s;
+  width: 130px;
+  margin-left: 5px;
+  background-color: #1340e8;
+}
+
+.about:hover span{
+  opacity: 1;
+  text-decoration: none;
+  font-size: 20px;
+  color:#adadad;;
+  
+}
+
+.about:hover::before {
+  transition: 0.5s;
+  opacity: 0;
+}
+
+/* Skills Navbar */
+
+.skills::before{
+  position: absolute;
+  content: '♦';
+  font-size: 50px;
+  left: -50%;
+  transform: translate(169px);
+}
+
+.skills:hover{
+  transition: linear 0.3s;
+  width: 130px;
+  margin-left: 5px;
+  background-color: #1340e8;
+}
+
+.skills:hover span{
+  opacity: 1;
+  text-decoration: none;
+  font-size: 20px;
+  color: #adadad;
+}
+
+.skills:hover::before {
+  transition: 0.5s;
+  opacity: 0;
+}
+
+/* Projects Navbar */
+
+.projects::before{
+  position: absolute;
+  content: '♥';
+  font-size: 40px;
+  left: -50%;
+  transform: translate(169px);
+}
+
+.projects:hover{
+  transition: linear 0.3s;
+  width: 130px;
+  margin-left: 5px;
+  background-color: #1340e8;
+}
+
+.projects:hover span{
+  opacity: 1;
+  text-decoration: none;
+  font-size: 20px;
+  color: #adadad;
+}
+.projects:hover::before {
+  transition: 0.5s;
+  opacity: 0;
+}
+
+/* Main section */
+
+.main-section {
+  float: right;
+  height: 100vh;
+  width: 90%;
+}
+
+.my-image {
+  height: 60vh;
+  width: 100%;
+  background-size: cover;
+}
+.main-name {
+  opacity: 1;
+  position: absolute;
+  top: 200px;
+  left: 700px;
+  font-family: 'Lexend Mega', sans-serif;
+  color: #3f3f40;
+}
+
+.wrap {
+  position: absolute;
+  top: 250px;
+  left: 700px;
+}
+
+.wrap span {
+  color: red;
+}
+
+.wrap h1 {
+  text-transform: capitalize;
+  border-right: 3px solid red;
+  animation: typist 10s linear, caret 0.7s infinite step-end;
+  animation-delay: 1s;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* About */
+
+.about-section{
+  margin: 30px 30px;
+  height: auto;
+  position:absolute;
+  top: 600px;
+  left: 200px;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 25px;
+}
+
+.about-section:hover {
+  box-shadow: 2px 8px 16px 2px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Skills */
+
+.skill-title {
+  position: absolute;
+  top: 1000px;
+  left: 870px;
+  margin-top: 50px;
+  
+}
+
+.skills-section1{
+  position: absolute;
+  height: 20vh;
+  width: 600px;
+  top: 1100px;
+  left: 300px;
+  padding: 10px;
+  margin-top: 100px;
+}
+
+.skill-section2 {
+  position: absolute;
+  left: 800px;
+  top: -25px;
+}
+
+/* Html */
+
+.html li{
+  margin-top: 10px;
+  border-radius: 50px;
+  animation: filler 3s linear;
+  background-color: blue;
+  max-width: 500px;
+  margin-bottom: 100px;
+}
+
+
+.html img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.html::after {
+  content: '100%';
+  position: absolute;
+  top: 30px;
+  font-size: 40px;
+  left: 75%;
+} 
+
+
+/*css*/
+
+.css {
+  position: relative;
+}
+
+.css img {
+  width: 100px;
+}
+
+.css li{
+  margin-top: 10px;
+  border-radius: 50px;
+  animation: filler 3s linear;
+  background-color: blue;
+  max-width: 500px;
+  margin-bottom: 70px;
+}
+
+.css::after {
+  content: '100%';
+  position: absolute;
+  top: 30px;
+  font-size: 40px;
+  left: 75%;
+} 
+
+/* React */
+
+.react {
+  position: relative
+}
+
+.react img {
+  width: 120px;
+}
+
+.react li {
+  margin-top: 10px;
+  border-radius: 50px;
+  animation: filler 3s linear;
+  max-width: 100px;
+  background-color: blue;
+  margin-bottom: 300px;
+  animation: filler-2 3s linear;
+}
+
+.react::after {
+  content: '10%';
+  position: absolute;
+  top: 30px;
+  font-size: 40px;
+  left: 75%;
+  
+}
+
+/* Bootstrap */
+
+.bootstrap img {
+  width: 150px;
+  margin-bottom: -10px;
+}
+
+.bootstrap li{
+  margin-top: 10px;
+  border-radius: 50px;
+  animation: filler-3 3s linear;
+  background-color: blue;
+  width: 420px;
+  margin-bottom: 100px;
+}
+
+
+
+.bootstrap::after {
+  content: '85%';
+  position: absolute;
+  top: 50px;
+  font-size: 40px;
+  left: 400px;
+  
+}
+
+/* Sass */
+
+.sass img {
+  width: 100px;
+}
+
+.sass li {
+  margin-top: 10px;
+  border-radius: 50px;
+  animation: filler 3s linear;
+  background-color: blue;
+  width: 500px;
+  margin-bottom: 100px;
+}
+
+
+
+.sass::after {
+  content: '100%';
+  position: absolute;
+  top: 300px;
+  font-size: 40px;
+  left: 400px;
+}
+
+/* Javascript */
+
+.java img {
+  width: 80px;
+}
+
+.java li {
+  margin-top: 10px;
+  border-radius: 50px;
+  animation: filler-4 3s linear;
+  background-color: blue;
+  width: 400px;
+  margin-bottom: 100px;
+}
+
+.java::after {
+  content: '70%';
+  position: absolute;
+  top: 520px;
+  font-size: 40px;
+  left: 400px;
+}
+
+/* Projects */
+
+.project-title {
+  position: absolute;
+  top: 2000px;
+  left: 570px;
+}
+
+.project-section {
+  position: absolute;
+  top: 2200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+}
+
+/* Todo */
+
+
+.todo img {
+  left: 460px;
+  top: 30px;
+  position: absolute;
+  width: 700px;
+  margin-left: 200px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+.todo:hover img {
+  transition: 0.4s;
+  width: 720px;
+  box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 1);
+}
+
+
+
+/* Keyframes */
+
+/* Main Animation */
+
+@keyframes caret {
+  0%, 100% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: black;
+  }
+}
+
+@keyframes typist{
+    0%{ 
+      width: 0ch;
+    }
+
+    30% {
+      width: 11ch;
+    }
+
+    80% {
+      width: 11ch;
+    }
+
+    90%{
+      width: 0ch;
+    }
+
+    100% {
+      width: 0ch;
+    } 
+}
+
+/* Skills animations */
+
+@keyframes filler {
+    from {
+      background-color: transparent;
+      width: 50px;
+    }
+
+
+    100% {
+      background-color: blue;
+      width: 500px;
+    }
+}
+
+@keyframes filler-2 {
+  from {
+    width: 0;
+    background-color: transparent;
+  }
+
+  100% {
+    width: 100px;
+    background-color: blue;
+  }
+}
+
+@keyframes filler-3 {
+  from {
+    width: 0;
+    background-color: transparent;
+  }
+
+  100% {
+    width: 420px;
+    background-color: blue;
+  }
+}
+
+@keyframes filler-4 {
+  from {
+    width: 0;
+    background-color: transparent;
+  }
+
+  100% {
+    width: 400px;
+    background-color: blue;
+  }
+}
